@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+## Ayurvedic Wellness App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intuitive React app that helps users explore Ayurvedic wellness through personalized prakriti analysis, tailored diet charts, daily routines, and a simple profile page. Built with modern React, lightweight UI components, and smooth responsive design.
+
+### Features
+- **Home dashboard**: Quick intro and navigation to all sections
+- **User Profile**: Basic profile inputs for personalization
+- **Prakriti Analysis**: Guided questionnaire and result view
+- **Diet Chart**: Diet suggestions aligned with prakriti
+- **Daily Schedule**: Day plan inspired by Ayurvedic practices
+- **Responsive UI**: Mobile-friendly navigation and layouts
+
+### Tech Stack
+- **React 19** with **react-router-dom 7** for SPA routing
+- **lucide-react** icons
+- Lightweight UI primitives in `src/components/ui` (button, card, input, label, select)
+- Bootstrapped with **Create React App**
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm
+
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+npm start
+```
+Visit `http://localhost:3000`.
+
+### Tests
+```bash
+npm test
+```
+
+### Production build
+```bash
+npm run build
+```
+Outputs to the `build` directory.
+
+---
 
 ## Available Scripts
+- **start**: `react-scripts start`
+- **build**: `react-scripts build`
+- **test**: `react-scripts test`
+- **eject**: `react-scripts eject` (irreversible)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Application Routes
+These routes are defined in `src/App.js`:
+- `/` → `Home`
+- `/profile` → `UserProfile`
+- `/prakriti` → `PrakritiAnalysis`
+- `/diet` → `DietChart`
+- `/schedule` → `DailySchedule`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
+Below are sample views located in `app_screenshots/`:
 
-### `npm test`
+![Home](app_screenshots/Home.png)
+![Prakriti](app_screenshots/Prakrati.png)
+![Diet](app_screenshots/Diet.png)
+![Schedule](app_screenshots/Schedule.png)
+![Profile](app_screenshots/Profile.png)
+![Analysis](app_screenshots/Analysis.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
+```text
+ayurvedic-wellness-app/
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  ├─ Home.js
+│  │  ├─ UserProfile.js
+│  │  ├─ PrakritiAnalysis.js
+│  │  ├─ DietChart.js
+│  │  ├─ DailySchedule.js
+│  │  └─ ui/ (button, card, input, label, select)
+│  ├─ App.js
+│  └─ index.js
+├─ app_screenshots/
+└─ README.md
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Development tips
+- Keep UI components reusable and accessible under `src/components/ui`
+- Prefer descriptive names and simple composition over complex abstractions
+- Ensure pages remain responsive across mobile and desktop
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
+Add your preferred license here (e.g., MIT). If omitted, all rights reserved by default.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
