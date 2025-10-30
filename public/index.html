@@ -7,9 +7,61 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Ayurvedic Wellness App - Discover your Prakriti and get personalized recommendations"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#059669',
+                foreground: '#ffffff',
+              },
+              secondary: {
+                DEFAULT: '#f3f4f6',
+                foreground: '#374151',
+              },
+              muted: {
+                DEFAULT: '#f9fafb',
+                foreground: '#6b7280',
+              },
+              accent: {
+                DEFAULT: '#f3f4f6',
+                foreground: '#374151',
+              },
+              destructive: {
+                DEFAULT: '#ef4444',
+                foreground: '#ffffff',
+              },
+              border: '#e5e7eb',
+              input: '#e5e7eb',
+              ring: '#059669',
+              background: '#ffffff',
+              foreground: '#111827',
+              card: {
+                DEFAULT: '#ffffff',
+                foreground: '#111827',
+              },
+              popover: {
+                DEFAULT: '#ffffff',
+                foreground: '#111827',
+              },
+            },
+            borderRadius: {
+              lg: '0.5rem',
+              md: 'calc(0.5rem - 2px)',
+              sm: 'calc(0.5rem - 4px)',
+            },
+          },
+        },
+      }
+    </script>
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +76,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Ayurvedic Wellness App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
